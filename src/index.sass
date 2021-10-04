@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: url('../assets/background.jpg') #f3f8fd;
+    background: url('../assets/background.jpg') -moz-linear-gradient(top, #f3f8fd 0%, #ffffff 100%);
+    background: url('../assets/background.jpg') -webkit-linear-gradient(top, #f3f8fd 0%, #ffffff 100%);
+    background: url('../assets/background.jpg') linear-gradient(to bottom, #f3f8fd 0%, #ffffff 100%);
+    background-size: cover;
+}
+.btn, #copyright {
+    position: fixed;
+}
+.btn {
+    z-index: 999;
+    
+    width: 80px;
+    padding: 15px;
+
+    box-sizing: border-box;
+    
+    border-radius: 15px;
+
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+
+    cursor: pointer;
+
+    background: black;
+
+    transition: 0.2s ease;
+}
+.flip-container {
+    width: 4em;
+    height: 2em;
+
+    border-bottom: 5px solid green;
+    border-radius: 0 0 15px 0;
+
+    background: rgb(0,64,1);
+    background: -moz-linear-gradient(180deg, rgba(0,64,1,1) 0%, rgba(36,237,28,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,64,1,1) 0%, rgba(36,237,28,1) 100%);
+    background: linear-gradient(180deg, rgba(0,64,1,1) 0%, rgba(36,237,28,1) 100%);
+}
+.flip-container i.fa.noselect {
+    position: relative;
+    top: -0.2em;
+}
+.flip-container {
+    right: 0;
+    border-radius: 0 0 0 15px;
+}
+.snapshot-container {
+    width: 4em;
+    height: 4em;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+
+    border: 10px solid #fff;
+    border-radius: 100%;
+
+    background: #ed7d1c;
+    
+    -moz-box-shadow:    inset 0 0 10px rgba(0,0,0, .5);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0, .5);
+    box-shadow:         inset 0 0 10px rgba(0,0,0, .5);
+}
+.snapshot-container i.fa.noselect {
+    line-height: 2em;
+}
+.btn:hover{
+    background: orange;
+}
+.btn:active {
+    background-color: grey;
+}
+.flip-container:hover {
+    width: 5em;
+
+    background: rgb(0,64,1);
+    background: -moz-linear-gradient(180deg, rgba(0,64,1,1) 0%, rgba(36,237,28,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,64,1,1) 0%, rgba(36,237,28,1) 100%);
+    background: linear-gradient(180deg, rgba(0,64,1,1) 0%, rgba(36,237,28,1) 100%);
+}
+#ZapparSnapshotContainer {
+    background: rgb(32,190,25);
+    background: -moz-linear-gradient(180deg, rgba(32,190,25,1) 0%, rgba(0,36,1,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(32,190,25,1) 0%, rgba(0,36,1,1) 100%);
+    background: linear-gradient(180deg, rgba(32,190,25,1) 0%, rgba(0,36,1,1) 100%);
+}
+#zapparSaveButton .st0{
+    fill: #fff;
+}
+#zapparShareButton .st0{
+    fill: #fff;
+}
+#zapparCloseAref g {
+    stroke: #fff;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
