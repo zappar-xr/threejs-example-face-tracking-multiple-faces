@@ -11,10 +11,11 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import snapshot from '@zappar/webgl-snapshot';
 
-import monkeyOneModel from '../assets/emoji_13.glb';
-import monkeyTwoModel from '../assets/emoji_15.glb';
-import monkeyThreeModel from '../assets/emoji_14.glb';
-import './index.sass';
+const monkeyOneModel = new URL('../assets/emoji_13.glb', import.meta.url).href;
+const monkeyTwoModel = new URL('../assets/emoji_15.glb', import.meta.url).href;
+const monkeyThreeModel = new URL('../assets/emoji_14.glb', import.meta.url).href;
+
+import './index.css';
 // The SDK is supported on many different browsers, but there are some that
 // don't provide camera access. This function detects if the browser is supported
 // For more information on support, check out the readme over at
